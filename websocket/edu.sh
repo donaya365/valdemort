@@ -4,10 +4,10 @@
 # ==========================================
 
 # Link Hosting Kalian
-fromhell26="raw.githubusercontent.com/fromhell26/scriptvps/main/websocket"
+donaya365="raw.githubusercontent.com/donaya365/valdemort/main/websocket"
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-nontls https://${fromhell26}/websocket.py
+wget -q -O /usr/local/bin/ws-nontls https://${donaya365}/websocket.py
 chmod +x /usr/local/bin/ws-nontls
 
 # Installing Service
@@ -35,7 +35,7 @@ systemctl enable ws-nontls
 systemctl restart ws-nontls
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-ovpn https://${fromhell26}/ws-ovpn.py
+wget -q -O /usr/local/bin/ws-ovpn https://${donaya365}/ws-ovpn.py
 chmod +x /usr/local/bin/ws-ovpn
 
 # Installing Service
@@ -63,7 +63,7 @@ systemctl enable ws-ovpn
 systemctl restart ws-ovpn
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-tls https://${fromhell26}/ws-tls
+wget -q -O /usr/local/bin/ws-tls https://${donaya365}/ws-tls
 chmod +x /usr/local/bin/ws-tls
 
 # Installing Service
