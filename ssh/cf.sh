@@ -6,11 +6,11 @@ MYIP=$(wget -qO- icanhazip.com);
 echo "Script By JoySmart"
 clear
 apt install jq curl -y
-DOMAIN=envy-cakill.me
+DOMAIN=kid-envy-vpn.tech
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.envy-cakill.me
+SUB_DOMAIN=${sub}.kid-envy-vpn.tech
 CF_ID=kidroster55@gmail.com
-CF_KEY=7bc52056c6ad31702fb03f8b04ff938fbdd66
+CF_KEY=1fa7ccec0343954e2242e221e38a439d20277
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
