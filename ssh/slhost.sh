@@ -20,7 +20,7 @@ echo "$SUB_DOMAIN" >> /etc/v2ray/domain
 #
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=joysmark.me
+DOMAIN=kid-envy-vpn.tech
 SUB_DOMAIN=onichan-${sub}.kid-envy-vpn.tech
 NS_DOMAIN=zerosl-${sub}.kid-envy-vpn.tech
 CF_ID=kidroster55@gmail.com
