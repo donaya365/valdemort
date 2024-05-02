@@ -57,10 +57,6 @@ domain=$(cat /root/domain)
 echo -e "[ ${green}INFO${NC} ] Start " 
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
-wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
-bash acme.sh --install
-rm acme.sh
-cd .acme.sh
 # Make Folder XRay
 mkdir -p /var/log/xray/
 
