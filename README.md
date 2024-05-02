@@ -9,16 +9,16 @@ Joysmarm is a ✨ special ✨ repository because its `README.md` (this file) app
 You can click the Preview link to take a look at your changes.
 --->
 <p align="center">
-<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=J+O+Y+S+M+A+R+K" />
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=E+N+V+Y+O+U+S+" />
 </p>
-<p align='center'><a href="https://api.daily.dev/get?r=joysmark"><img src="https://raw.githubusercontent.com/Kjoyvpn/.github/main/scriptvps.png?r=82s" width="150" alt="joysmark"/></a></p>
+<p align='center'><a href="https://api.daily.dev/get?r=joysmark"><img src="https://raw.githubusercontent.com/Kjoyvpn/.github/main/scriptvps.png?r=82s" width="150" alt="call me kill"/></a></p>
 
 ![joysmark's card name](https://cardivo.vercel.app/api?name=Joysmark%20&description=Hi,%20everyone!%20and%20Nice%20to%20meet%20you%20%F0%9F%91%8B&image=https://raw.githubusercontent.com/Kjoyvpn/.github/main/kurumiwangy3.jpg?v=4&backgroundColor=%23ecf0f1&twitter=/&github=joysmark&pattern=leaf&colorPattern=%23eaeaea)
 
 
 <h2 align="center">
 Auto Script Install All VPN Service
-Mod By JoySmark
+Mod By envyvpn
 <img src="https://img.shields.io/badge/Version-1.0.0-blue.svg"></h2>
 
 </p> 
