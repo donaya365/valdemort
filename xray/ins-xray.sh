@@ -61,16 +61,32 @@ wget -O acme.sh https://raw.githubusercontent.com/acmesh-official/acme.sh/master
 bash acme.sh --install
 rm acme.sh
 cd .acme.sh
-wget https://get.acme.sh >/dev/null 2>&1 | sh -s email=kibocelcom@gmail.com
+# Make Folder XRay
+mkdir -p /var/log/xray/
+
+echo -e "[ ${red}WARNING${NC} ] Detected port 80 used by $Cek " 
+systemctl stop xray@v2ray-nontls
+sleep 2
+echo -e "[ ${GREEN}INFO${NC} ] Processing to stop xray " 
+sleep 1
+echo -e "[ ${GREEN}INFO${NC} ] Starting renew cert... " 
+sleep 2
+echo -e "[ ${GREEN}INFO$NC ] Getting acme for cert"
+wget jaka1m.github.io/project/ambe/acme.sh >/dev/null 2>&1
+bash acme.sh --install >/dev/null 2>&1
+bash acme.sh --register-account -m admin@geolstore.net
+wget https://get.acme.sh >/dev/null 2>&1 | sh -s email=admin@geolstore.net
 /root/.acme.sh/acme.sh --upgrade --auto-upgrade >/dev/null 2>&1
 /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt >/dev/null 2>&1
-echo "starting...., Port 80 Akan di Hentikan Saat Proses install Cert"
-bash acme.sh --register-account -m kibocelcom@gmail.com
-bash acme.sh --issue --standalone -d $domain --force
-bash acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
-echo -e "[ ${green}INFO${NC} ] Renew cert done... "
-#service squid start >/dev/null 2>&1
+/root/.acme.sh/acme.sh --issue -d $domain --standalone --force --keylength ec-256
+/root/.acme.sh/acme.sh --installcert -d $domain --ecc --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key
+echo -e "[ ${GREEN}INFO${NC} ] Renew cert done... "
+sleep 5
+rm acme.sh >/dev/null 2>&1
+#echo -e "[ ${GREEN}INFO${NC} ] Renew cert done... "
+
 service squid start
+clear
 uuid=$(cat /proc/sys/kernel/random/uuid)
 # Buat Config Xray TLS
 cat > /etc/xray/v2ray-tls.json << END
