@@ -17,7 +17,7 @@ echo "Checking VPS"
 clear
 echo start
 sleep 0.5
-source /var/lib/fromhell26/ipvps.conf
+source /var/lib/donaya365/ipvps.conf
 domain=$IP
 systemctl enable xray@v2ray-tls
 systemctl enable xray@v2ray-nontls
